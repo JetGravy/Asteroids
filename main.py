@@ -15,7 +15,10 @@ def main():
             if event.type == pygame.QUIT:
                 print("Exiting Asteroids, did you have fun?")
                 return
+        
+        player.update(dt)
         screen.fill("black")
+        
         player.draw(screen)
         pygame.display.flip()
         
